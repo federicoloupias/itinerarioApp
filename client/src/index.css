@@ -1,0 +1,446 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 350px;
+}
+
+input {
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+p, h1, h2, h3, h4 {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+#menu i{
+  font-size: 30px;
+}
+
+#header {
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+}
+
+#header img {
+  width: 100%;
+}
+
+#header p {
+  text-align: center;
+  margin: 0.5em 3em 3em 3em;
+  font-weight: 100;
+}
+
+#browsing {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+#browsing img {
+  width: 100px;
+}
+
+#subtitle {
+  text-align: center;
+  margin-bottom: 0.7em;
+}
+/* Estilos del carrousel */
+
+#carousel-image {
+  position: relative;
+  width: 48%;
+  height: 180px;
+  float: left;
+  margin-left: 1.4%;
+  margin-bottom: 0.5em;
+  overflow: hidden;
+}
+
+#carousel-image img{
+  width: 200%;
+}
+
+#carousel-image p {
+  position: absolute;
+  top: 40% !important;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  width: 100%;
+  line-height: 40px;
+  font-size: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+#carousel-image .carousel-caption h3 {
+  font-size: 20px;
+}
+
+.d-none {
+  display: block!important;
+}
+
+/* Estilos de pagina Cities */
+.citiesContainer {
+  text-align: center;
+}
+
+.citieList {
+  display: inline-block;
+  position: relative;
+  width: 98%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.citieList img {
+  width: 100%;
+}
+
+.citieList p {
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  width: 100%;
+  line-height: 50px;
+  font-size: 20px;
+  position: absolute;
+  top: 37.5%;
+}
+
+#filtro {
+  text-align: center;
+}
+
+/* Estilos de itinerarios */
+.itineraryContainer {
+  text-align: center;
+}
+
+#banner {
+  display: inline-block;
+  width: 98%;
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  margin-bottom: 2em;
+}
+
+#bannerImg{
+  width: 100%;
+}
+
+#title {
+  width: 100%;
+  line-height: 60px;
+  position: absolute;
+  top: 35%;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+#itinerary {
+  display: inline-block;
+  background: rgb(241, 241, 241);
+  width: 98%;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 5px;
+  margin-top: 0.5em;
+}
+
+#itinerary p, h4 {
+  text-align: left;
+}
+
+#subtitle {
+  text-align: left;
+  margin-left: 0.5em;
+}
+
+#divImg {
+  margin-top: 0.8em;
+  margin-left: 0.2em;
+  width: 25%;
+  float: left;
+}
+
+#profilePic {
+  width: 80px;
+  height: 80px;
+  float: left;
+  border-radius: 50%;
+}
+
+#itineraryInfo {
+  margin-top: 0.5em;
+  width: 72%;
+  float: right;
+  position: relative;
+}
+
+#itineraryInfo h4{
+  text-align: left;
+}
+
+.icon-heart {
+  position: absolute;
+  top: 0%;
+  right: 5%;
+  font-size: 23px;
+  color: grey;
+}
+
+.icon-heart.liked {
+  color: rgb(226, 66, 93);
+  transition: all 100ms;
+}
+
+
+#feedback {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 0.5em;
+}
+
+#buttonCollapse p{
+  text-align: center;
+  cursor: pointer;
+}
+
+.viewAllBut {
+  background: grey;
+  margin: 0.5em;
+  padding: 0.5em;
+  color: rgb(255, 255, 255);
+}
+
+#carrouselAct .carousel-item {
+  height: 200px;  
+}
+
+#carrouselAct .carousel-item img {
+  width: 105%;
+}
+
+#carrouselAct {
+  margin:  0 0.5em 0.5em 0.5em;
+  text-align: left;
+}
+
+#carrouselAct .carousel-caption {
+  position: absolute !important;
+  bottom: 0 !important;
+  left: auto;
+  right: auto;
+  width: 100%;
+  padding: 0;
+  line-height: 30px;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+
+}
+
+.carousel-indicators {
+  display: none;
+}
+
+.commentInput {
+  
+  margin-top: 1em;
+  border-radius: 4px;
+  border: 0.5px solid rgb(158, 158, 158);
+}
+
+.editInput {
+  width: 58%;
+  margin-left: 0.5em;
+  border: 0.5px solid rgb(158, 158, 158);
+  border-radius: 4px;
+  padding-left: 0.3em;
+}
+
+.editForm {
+  text-align: left;
+}
+
+
+input[type="submit"], .logoutButt {
+  color: white;
+  background: rgb(11, 100, 173);
+  border: none;
+  padding: 0.2em 0.7em 0.2em 0.7em;
+  cursor: pointer;
+}
+
+.comment, .deletedComment {
+  font-size: 15px;
+  border: 1px solid grey;
+  border-radius: 8px;
+  margin: 0.5em !important;
+}
+
+.commentInfo{
+  min-height: 30px;
+  width: 99%
+}
+
+.commentP, .authorP {
+  text-align: left !important;
+  margin: 0 0.55em !important;
+}
+
+.authorP {
+  font-size: 18px;
+  margin-top: 0.3em !important;
+}
+
+.commentP {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 0.3em !important;
+}
+
+.deletedComment p{
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: 40px;
+  color: grey;
+  border: 0.5px solid rgba(128, 128, 128, 0.1);
+}
+
+.editSet {
+  display: flex;
+  width: 100%;
+  height: 25px;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.editSet p {
+  margin-right: 0.5em;
+}
+
+#noItinerary {
+  line-height: 200px;
+  font-size: 25px;
+  border: 1px solid black;
+  background: rgb(207, 203, 203);
+  margin: 1em;
+}
+
+/* Estilos de create-account */
+.create-form {
+  margin-top: 2em;
+  width: 100%;
+}
+
+.create-form label {
+  margin-left: 1.2em;
+  width: 25%;
+}
+
+.create-form input[type="text"],.create-form input[type="password"],.create-form input[type="email"] {
+  width: 60%;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.create-form input[type="submit"], .logoutButt {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.create-form select {
+  width: 40%;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+.add-photo input[type="file"]{
+  font-size: 15px;
+  width: 60%;
+}
+
+.conditions p{
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.create-form input[type="submit"]:disabled {
+  background: rgba(11, 100, 173, 0.5);
+}
+
+.validateSpan {
+  display: block;
+  text-align: right;
+  margin-top: -1em;
+  margin-bottom: 1em;
+  margin-right: 3em;
+  color: red;
+  font-size: 15px;
+}
+
+
+/* Estilos Login */
+.loginDiv form {
+  margin-top: 2em;
+}
+.loginDiv label{
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  width: 20%;
+}
+
+.loginDiv input[type="text"], .loginDiv input[type="password"]{
+  margin-left: 0;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  width: 65%;
+}
+
+.loginDiv input[type="submit"] {
+  display: block;
+  padding: 0.5em 1em;
+  margin: 0 auto 1em auto;
+}
+
+.googleSign {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Dashboard */
+
+.logoutButt {
+  margin-top: 2em;
+}
+
+.profilePic {
+  width: 40%;
+  margin: 1em auto;
+  border-radius: 50% ;
+  border: 2px solid black;
+  overflow: hidden;
+}
+
+.profilePic img{
+  width: 100%;
+}
+
+.userIcon {
+  width: 35px;
+  border-radius: 50%;
+  margin-top: 0.3em;
+}
