@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component }  from 'react';
 import Menu from './Menu';
 import axios from 'axios';
 import {connect} from 'react-redux'
 
-class Create extends React.Component {
+class Create extends Component {
   constructor(){
     super()
 
@@ -24,6 +24,7 @@ class Create extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleCheckbox = this.handleCheckbox.bind(this);
     this.handleClick = this.handleClick.bind(this);
+    this.imgUpload = this.imgUpload.bind(this);
 
   }
 
@@ -54,6 +55,7 @@ class Create extends React.Component {
         window.location.href = 'http://localhost:3000/login'
       })
       .catch(err => {
+        console.log(err)
         this.setState({errors: err.response.data})
         console.log(this.state.errors)
       })
