@@ -13,7 +13,7 @@ const likes = require("./routes/likes");
 const comments = require("./routes/comments");
 app.use(express.json())
 
-mongoose.connect("mongodb+srv://LucasCampos:La25stone@mytinerarycluster-fdoet.mongodb.net/mytinerary?retryWrites=true&w=majority",{useNewUrlParser: true})
+mongoose.connect("mongodb+srv://LucasCampos:La25stone@mytinerarycluster-fdoet.mongodb.net/mytinerary?retryWrites=true&w=majority",{useNewUrlParser:true,useCreateIndex:true,useUnifiedTopology: true})
 
 
 router.get("/", (req, res) => {
